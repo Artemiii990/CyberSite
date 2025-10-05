@@ -847,13 +847,6 @@ body {
         margin-inline: auto;
     }
 
-    .SWOT-container {
-        max-width: 350px;
-        width: 100%;
-        margin-inline: auto;
-    }
-
-
 
 
 
@@ -876,17 +869,32 @@ body {
 
     .upcoming-card.right .card-meta { left: 25%; }
 
-
-
-    /**
-     * FOOTER
-     */
-
-    .footer-top .container { grid-template-columns: 1fr 1fr; }
-
 }
 
 
+
+@media (max-width: 575px) {
+
+    .SWOT-section{
+        margin-top: 150px;
+    }
+
+    .swot-container{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer .container {
+        margin-top: 450px;
+    }
+
+    .center-circle {
+        position: relative;
+        top:-1180px;
+    }
+
+
+}
 
 
 
@@ -919,8 +927,6 @@ body {
      */
 
     .container { max-width: 720px; }
-
-    .SWOT-container{max-width: 550px}
 
     .h1 { line-height: 1; }
 

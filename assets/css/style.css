@@ -632,6 +632,71 @@ body {
 
 
 
+/*-----------------------------------*\
+  #SWOT
+\*-----------------------------------*/
+
+
+.SWOT-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+}
+
+.swot-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 900px;
+    height: 650px;
+    position: relative;
+}
+
+.swot-box {
+    padding: 20px;
+    border-radius: 20px;
+    color: #222;
+    border: 5px solid var(--text-purple);
+    background-color: var(--bg-oxford-blue-alpha-90);
+}
+
+
+.swot-box h2 {
+    color:white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.swot-box ul {
+    color:white;
+    margin: 0;
+    padding-left: 18px;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: 5px solid var(--text-purple);
+    background: var(--border-space-cadet);
+}
+
+
+
 
 /*-----------------------------------*\
   #FOOTER
@@ -782,6 +847,14 @@ body {
         margin-inline: auto;
     }
 
+    .SWOT-container {
+        max-width: 350px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+
+
 
 
     /**
@@ -847,6 +920,8 @@ body {
 
     .container { max-width: 720px; }
 
+    .SWOT-container{max-width: 550px}
+
     .h1 { line-height: 1; }
 
 
@@ -897,6 +972,12 @@ body {
 
     .news-list { grid-template-columns: 1fr 1fr; }
 
+
+    /**
+     * SWOT
+     */
+
+    .SWOT-list {grid-template-columns: 1fr 1fr}
 
 
     /**
@@ -968,6 +1049,8 @@ body {
 
     .container { max-width: 960px; }
 
+    .SWOT-container{max-width: 650px; }
+
     .h2 { line-height: 1.1; }
 
 
@@ -1033,6 +1116,14 @@ body {
     .news-list { grid-template-columns: repeat(3, 1fr); }
 
 
+    /**
+     * SWOT
+     */
+
+    .SWOT-list {grid-template-columns: repeat(2, 1fr);}
+
+
+
 
     /**
      * FOOTER
@@ -1057,6 +1148,8 @@ body {
      */
 
     .container { max-width: 1140px; }
+
+    .SWOT-container { max-width: 850px; }
 
     .section-text { margin-block-end: 200px; }
 
